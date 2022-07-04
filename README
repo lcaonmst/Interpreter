@@ -1,0 +1,26 @@
+Autor: Kamil Zwierzchowski
+Indeks: 418510
+
+Język imperatywny oparty na konstrukcjach z C++, Pascal i Python. Posiada 3 elementarne typy danych 'int', 'boolean', 'string', struktury tablicowe 'type ::= type[]' oraz krotki 'type ::= "(" [type] ")"'. Możliwe są podstawowe operacje arytmetyczne i logiczne, jednak nie ma operacji na bitach. Zmienne deklarowane są w sposób dowolny pod warunkiem zachowania unikalności indentyfikatorów. Wbudowane są funkcje rodziny 'print*' wypisujące dane typów podstawowych na standardowe wyjście. Dołączone są również pętla 'while', 'if..else', funkcje rekurencyjne. Język nie wspiera procedur - każda funkcja musi być nietrywialnego typu oraz musi zakończyć explicite zwróceniem uwagi - w przeciwnym razie zostanie rzucony błąd. Argumenty funkcji mogą zostać przekazane zarówno przez wartość, jak i przez zmienną - jak referencja w C++. 
+Zmienne są wiązane statycznie, funkcja która wybiera zmienną z szerszego zasięgu zostaje w niej już na zawsze. Przysłanianie zmiennych nie jest wspierane. W przypadku błędów wykonania interpreter wypisze stosowny komunikat w zależności od rodzaju błędu - dzielenie przez zero, funkcja kończy się bez zwracania wartości itp. 
+Funkcje mogą być deklarowane lokalnie, w szczególności można robić dowolne zagnieżdżenie ich definicji z zachowaniem statycznego wiązania. Dołączone są operacja na tablicach które można deklarować przy pomocy stałej, a nie przy użyciu nietrywialnego równania. Możliwe jest deklarowania wielu ich wymiarów, przekazywanie ich do funkcji jest przeprowadzone przez wskaźnik - zmiana tablicy w funkcji spowoduje jej zmianę na zewnątrz.
+
+Funkcjonalności:
+01 (trzy typy)                                                działa
+02 (literały, arytmetyka i porównania)                        działa
+03 (zmienne, przypisanie)                                     działa
+04 (print)                                                    działa
+05 (while, if)                                                działa
+06 (funkcje lub procedury, rekurencja)                        działa
+07 (przez zmienną / przez wartość / in / out)                 działa 
+09 (przesłanianie i statyczne wiązanie)                       działa
+10 (obsługa błedów wykonania)                                 działa
+11 (funkcje zwracające wartość)                               działa
+13 (2) (funkcje zagnieżdżone ze statycznym wiązaniem)         działa
+14 (2) (rekordy / listy / tablice / tablicy wielowymiarowe)   działa
+15 (2) (krotki z przypisaniem)                                nie działa
+16 (1) (break, continue)                                      działa 
+
+Za całość oczekiwana jest liczba 25 pkt.
+
+
